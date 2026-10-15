@@ -4,9 +4,11 @@ class Duckctl < Formula
   version "0.17.3"
   license "Apache-2.0"
 
+  # PyPI gets each stable `daemon-vX.Y.Z` release, so the latest release names the version.
   livecheck do
-    url :stable
-    strategy :pypi
+    url :homepage
+    regex(/^daemon-v?(\d+(?:\.\d+)+)$/i)
+    strategy :github_latest
   end
 
   uses_from_macos "unzip" => :build
