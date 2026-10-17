@@ -2,7 +2,7 @@
 class Duckctl < Formula
   desc "Talk to a Microduck robot from a laptop over Bluetooth LE"
   homepage "https://github.com/pollen-robotics/microduck"
-  version "0.17.5"
+  version "0.17.6"
   license "Apache-2.0"
 
   # PyPI gets each stable `daemon-vX.Y.Z` release, so the latest release names the version.
@@ -17,27 +17,27 @@ class Duckctl < Formula
   # The binary CI builds for each release, taken out of the PyPI wheel it ships in.
   on_macos do
     on_arm do
-      url "https://files.pythonhosted.org/packages/ad/42/3ac9db2f98c78b30e8e2ad12d5fed59ef83a995c95f097b71a122daf634b/duckctl-0.17.5-py3-none-macosx_11_0_arm64.whl",
+      url "https://files.pythonhosted.org/packages/4d/b0/7c395fe286e1f08ababce2a4f02195580148138a56e6ed88ccb2c92ad8d8/duckctl-0.17.6-py3-none-macosx_11_0_arm64.whl",
           using: :nounzip
-      sha256 "acd44be44eaacc7c95c6f030beb4d3a2cb6b04ba16c00c3e54f8a01890fffa3a"
+      sha256 "9d4cf3f5e6d01824afae30f2a2d0c2f4101bc5daa9996fc05f7b90dfdc49ce20"
     end
     on_intel do
-      url "https://files.pythonhosted.org/packages/9e/7b/5a4dbf32b14aeb6d8b78c6a6cc1ffe45082b8a5ca785d13e09833225bf21/duckctl-0.17.5-py3-none-macosx_10_12_x86_64.whl",
+      url "https://files.pythonhosted.org/packages/dc/f1/7d8a1018d3936b88215d19f525390330f9e8139f1d881ab7b0dc12c7f583/duckctl-0.17.6-py3-none-macosx_10_12_x86_64.whl",
           using: :nounzip
-      sha256 "086a35c37077fa9a00c8b5c30086411ff565cc345f10fa3d89a2d574949bf8ba"
+      sha256 "69391366f22c8b839621f5854e12ea2d60017b0eff2aaec66f4e5c106c57b104"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://files.pythonhosted.org/packages/0e/c2/b216294e10bd82f199052bdec5d9bfe79363fd94a6f2e34b51316b77263f/duckctl-0.17.5-py3-none-manylinux_2_28_aarch64.whl",
+      url "https://files.pythonhosted.org/packages/8d/e4/f290f2c0acc2239a24d4b7a60b788ba10ed0e1c6956a3e4d4c8430276976/duckctl-0.17.6-py3-none-manylinux_2_28_aarch64.whl",
           using: :nounzip
-      sha256 "5ce7d54f9805fed95ace00e9d18b2d7459ea9cd9c631fa763dd1e1de0ca81c7f"
+      sha256 "31ca3577ba61a904da94891f3ed782815c6ed02f51859782a672a037df1f254b"
     end
     on_intel do
-      url "https://files.pythonhosted.org/packages/b8/42/92d60499a955d5df1274e21c1482fe9b6664c9be87951a54d2d9f5cbe73e/duckctl-0.17.5-py3-none-manylinux_2_28_x86_64.whl",
+      url "https://files.pythonhosted.org/packages/18/68/a9833ceb9dc183fa9c96aec3c28f58fe3fb4d99aaf6bc20d1e652513caf6/duckctl-0.17.6-py3-none-manylinux_2_28_x86_64.whl",
           using: :nounzip
-      sha256 "e96863371a2e4d3bff4a6de823f810ad59bcd61e4080e1fbd035f1b1add392d7"
+      sha256 "18edf5613a9f99d7bba50763b092ffe31b9ed098d8b19eae2ec908779c52baff"
     end
   end
 
